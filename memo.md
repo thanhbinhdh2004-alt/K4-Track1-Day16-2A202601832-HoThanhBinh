@@ -39,13 +39,34 @@
 
 | | Early adopters | Tệp hiện tại |
 |---|---|---|
-| Đặc điểm | | |
-| JTBD chính | | |
-| Trước đó họ làm bằng cách nào | | |
+| Đặc điểm | Người dùng “tự tổ chức” hoặc người sáng tạo/nhà quản lý nhỏ: founder, PM, designer, content creator, freelancer; thích tính linh hoạt, có nhu cầu lưu trữ tri thức cá nhân và tự dựng workflow; sẵn sàng thử nghiệm nhiều template/khung cấu trúc khác nhau | Team nhỏ đến trung bình hoặc bộ phận vận hành/marketing/operations: cần một “source of truth” chung cho docs, tasks, wiki, meeting notes, project tracking; làm việc theo nhóm, cần collaboration, quyền truy cập, templates và AI hỗ trợ search/summarize |
+| JTBD chính | “Tạo nơi duy nhất để ghi chú, lưu ý, ý tưởng và tổ chức công việc cá nhân theo cách của mình.” | “Tổ chức tri thức, công việc và tiến độ của cả team trong một hệ thống duy nhất; tìm thông tin nhanh, chia sẻ công việc rõ ràng và giảm công việc lặp lại bằng automation/AI.” |
+| Trước đó họ làm bằng cách nào | Dùng notes app kèm file lưu trữ cá nhân, task list, docs, spreadsheet, email, và nhiều tool riêng biệt; thường tự “hack” cấu trúc bằng folders/templates, chồng ghép giữa Google Docs, Trello, Evernote, Slack,... | Dùng mix của Docs/Drive, Jira/Asana, Confluence, Slack/Teams, Calendar, Notepad, spreadsheets; mỗi team có “một bộ tool riêng” và dữ liệu bị tản mát giữa nhiều hệ thống |
 
-**Dịch chuyển tệp:** cột mốc nào ở §1 gây ra sự dịch chuyển? Tại sao?
+**Dịch chuyển tệp:** Tệp user dịch chuyển từ “người dùng cá nhân, chú trọng tính linh hoạt và cá nhân hóa” sang “team/organization, chú trọng collaboration + process + data as shared asset”. Sự dịch chuyển này diễn ra chủ yếu qua các mốc quan trọng ở §1:
 
-**Switching cost (map 4 forces):** điều gì giữ user ở lại? Lực nào đang kéo họ đi / giữ họ lại?
+- 2018: Notion 2.0 đưa database + wiki + collaboration, chuyển Notion từ “note app” thành “all-in-one workspace”. Đây là bước đầu khiến tool phù hợp với team và workflow hơn là chỉ cá nhân.
+- 2020: bỏ giới hạn blocks trên free tier khiến người dùng cá nhân cắm rễ dữ liệu trong Notion, tạo mô hình “dùng nhiều rồi mới nâng cấp”. Điều này làm tăng độ bám dính trước khi team bắt đầu chuyển sang dùng chung.
+- 2021: API làm cho Notion trở thành nền tảng, không còn là app đơn lẻ. Team/agency/agency-like business bắt đầu nhúng Notion vào automations và workflow riêng.
+- 2022–2024: AI + Calendar gắn thêm value cho usage hàng ngày và workspace-level context. Đây là thời điểm Notion không chỉ là nơi lưu trữ, mà là nơi “điều phối việc làm” của cả nhóm.
+- 2025: AI bundle vào Business/Enterprise chuyển Notion từ “tool hạng nhì” sang “standard operating system” của một số team, giúp dễ hơn nhiều để có một workspace dùng chung cho docs + task + knowledge + agent.
+
+Nói cách khác, Notion đã đi từ “giải quyết nhu cầu cá nhân có thể viết ghi chú tốt hơn” sang “giải quyết nhu cầu tổ chức thông tin và vận hành công việc của cả team”.
+
+**Switching cost (map 4 forces):** Notion giữ user ở lại không chỉ vì đẹp hay linh hoạt, mà vì dữ liệu và quy trình đã được tích hợp sâu vào hệ thống. Có thể map theo 4 lực sau:
+
+1. Data lock-in: Workspace chứa pages, databases, linked relations, templates, history, content và knowledge base; chuyển ra khỏi Notion mất chi phí cao về tái cấu trúc và tìm lại thông tin.
+2. Process lock-in: Team đã xây sẵn workflow trên database, templates, views, permissions, tags, automations; thay đổi tool nghĩa là tái thiết lại cả quy trình vận hành.
+3. Social lock-in: Thông tin, meeting notes, task, wiki, PMS, backlog đều được chia sẻ trong không gian công việc chung; cả team đã quen với “đi đúng chỗ” của mọi thứ.
+4. Ecosystem lock-in: API, integrations, calendar, AI context và workspaces gắn chặt với phần còn lại của stack; đối với doanh nghiệp/nhóm nhỏ, rời Notion không chỉ là “đổi app” mà là “đổi cả hệ thống làm việc”.
+
+Lực kéo đi (pull-away forces) thì cũng rõ ràng:
+
+- Các tool chuyên biệt như Jira/Asana cho quản lý dự án, Google Workspace/Microsoft 365 cho collaboration cực mạnh, Slack/Teams cho chat, Obsidian/Apple Notes cho lưu trữ cá nhân, ClickUp/Monday cho người thích workflow có cấu trúc hơn.
+- Một số user thấy Notion quá linh hoạt nhưng thiếu “sự chắc chắn” và “bộ khung chuẩn” của hệ thống chuyên biệt; họ muốn không gian rõ ràng hơn, ít “một trang chồng lên nhiều ý nghĩa”.
+- AI và Big Tech bundle cũng tạo áp lực: nếu Google/Microsoft đưa AI ngay vào suite làm việc, một number of users sẽ cân nhắc di chuyển tích hợp trong ecosystem hiện có.
+
+Vì vậy, switching cost của Notion mạnh nhất khi user đã gắn dữ liệu + workflow + team collaboration vào workspace, nhưng vẫn bị đe dọa ở phần “người dùng muốn độ chuyên biệt và tích hợp sâu trong hệ sinh thái mà họ đã quen”.
 
 ---
 
@@ -54,17 +75,17 @@
 <!-- Cách làm: mỗi người viết nháp ít nhất 1 dự đoán kèm lập luận,
      cả nhóm chất vấn "dựa vào mốc nào? tệp nào?" rồi mài lại thành 3 cái chung. -->
 
-**Dự đoán 1** *(loại: mở rộng tính năng / segment / mô hình kiếm tiền / đe dọa Big Tech)*
-- **Dự đoán:** …
-- **Lập luận:** … *(dẫn ngược về §1–§2)*
+**Dự đoán 1** *(loại: mở rộng segment)*
+- **Dự đoán:** Notion sẽ ra các Agent template dựng sẵn theo phòng ban/ngành (CSKH, IT helpdesk, sales ops) để bán sâu hơn vào doanh nghiệp lớn, thay vì chỉ để user tự cấu hình Agent từ đầu.
+- **Lập luận:** mốc 09/2025 — Notion 3.0 (§1) đã hé lộ "Custom Agents" xử lý customer feedback/IT requests; tệp hiện tại đã dịch chuyển sang team/organization cần "một hệ thống vận hành chung" (§2) — bước hợp lý tiếp theo là đóng gói sẵn use case theo phòng ban thay vì để mỗi team tự mò.
 
-**Dự đoán 2** *(loại: …)*
-- **Dự đoán:** …
-- **Lập luận:** …
+**Dự đoán 2** *(loại: mô hình kiếm tiền)*
+- **Dự đoán:** Notion sẽ chuyển một phần giá AI sang mô hình tính theo mức dùng Agent (agent credits/usage-based) thay vì chỉ gộp cứng vào giá seat Business/Enterprise như hiện tại.
+- **Lập luận:** mốc 05/2025 (§1) cho thấy Notion sẵn sàng đổi cả mô hình tiền tệ hoá AI (bỏ add-on, gộp vào tier); Agent giờ chạy tác vụ đa bước tốn compute hơn nhiều so với text completion, nên khó giữ mãi flat-fee khi Agent càng làm nhiều việc thay user.
 
-**Dự đoán 3** *(loại: …)*
-- **Dự đoán:** …
-- **Lập luận:** …
+**Dự đoán 3** *(loại: đe dọa Big Tech)*
+- **Dự đoán:** Notion sẽ đẩy mạnh AI Connectors (Slack, GitHub, Outlook, Box…) để trở thành "lớp context" tổng hợp dữ liệu xuyên nhiều tool, thay vì đấu trực diện "AI ai giỏi hơn" với Microsoft Copilot/Google Gemini.
+- **Lập luận:** phân tích switching cost ở §2 chỉ ra rủi ro lớn nhất là Big Tech bundle AI sẵn trong suite hiện có của user; nguyên lý "Vertical AI/moat từ domain context" ở mốc 09/2025 (§1) cho thấy Notion đặt cược vào việc sở hữu ngữ cảnh xuyên nhiều tool — thứ Copilot/Gemini (chỉ chạy trong hệ sinh thái riêng của họ) khó sao chép.
 
 ---
 
@@ -72,8 +93,11 @@
 
 <!-- Cách làm: mỗi người tự khai phần việc của mình (không ai khai hộ ai). -->
 
-| Việc | Phụ trách | Nhóm kiểm chứng/phán đoán lại thế nào? |
+| Việc | AI làm hay nhóm làm? | Nhóm kiểm chứng/phán đoán lại thế nào? |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Hồ Thanh Bình: tổng hợp chuỗi timeline từ changelog/blog và chọn các mốc quan trọng để đưa vào §1. | AI hỗ trợ tổng hợp và gợi ý cấu trúc; nhóm làm kiểm tra, chọn lọc và quyết định cuối cùng. | Nhóm mở lại các link gốc, loại bỏ mốc chỉ là feature update hoặc nâng cấp model, và giữ lại các mốc có ảnh hưởng rõ tới JTBD, pricing hoặc nền tảng. |
+| Nguyễn Thị Việt Vinh: phân tích tệp user, JTBD, switching cost và mô hình lock-in để viết §2. | AI hỗ trợ sắp xếp logic và gợi ý nhánh phân tích; nhóm làm chính việc xác nhận bằng chứng và chỉnh lại câu chữ. | Nhóm đọc lại từng đoạn để đảm bảo lập luận đi từ data, collaboration, process, ecosystem lock-in, không chỉ dựa vào nhận định chung về AI. |
+| Cả nhóm: viết ba dự đoán hướng đi 6–12 tháng tới và đối chiếu với các nguyên lý ở §1–§2. | Nhóm làm chính; AI chỉ hỗ trợ sắp xếp phrasing và kiểm tra tính hợp lý của câu văn. | Nhóm chất vấn từng dự đoán theo ba tiêu chí: có dựa trên mốc nào, đúng trục nào (segment/pricing/ecosystem), và có đủ bằng chứng để vượt qua phản biện. |
+| Ghép memo vào 4 phần hoàn chỉnh và rà soát lại toàn bộ bài trước khi nộp. | Nhóm làm chính; AI hỗ trợ gợi ý chỉnh dạng, flow và độ rõ ràng. | Nhóm đọc lại cả file 1 lượt, sửa lỗi logic, kiểm tra độ nhất quán giữa timeline, JTBD và dự đoán, rồi chốt phiên bản final. |
+
+
